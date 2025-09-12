@@ -15,6 +15,12 @@ sudo chown -R dev_senior:desenvolvedores /srv/projetos
 sudo chmod -R 750 /srv/projetos
 ls -l /srv/
 
+sleep 500 &
+ps aux | grep sleep
+jobs
+
+sudo kill <PID>
+
 #!/bin/bash
 echo '=========================================='
 echo 'Bem-vindo(a) ao Servidor de Desenvolvimento!'
